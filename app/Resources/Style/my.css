@@ -1,0 +1,33 @@
+.input-group-text {
+  width: 110px;
+}
+#links:hover {
+  border-bottom: 1px solid #008a33;
+}
+button:hover {
+  background: #008a33;
+}
+#greenBtn {
+  border: 1px solid #dfdfdf;
+}
+#redBtn {
+  border: 1px solid #00782c;
+}
+#add:hover {
+  color: #00782c;
+ }
+.status {
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  color: green;
+}
+.top-nav-line {
+  border-bottom: 3px solid #00aa3e;
+}
+.homepage-logo {
+  text-align: center;
+}
+.green-title {
+  color: #00aa3e;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Edit '{{ user.name }}' record</title>
+  <link rel="stylesheet" href="../Style/bootstrap.min.css">
+  <link rel="stylesheet" href="../Style/my.css">
+  <script src="Style/fa.js"></script>
+</head>
+<body>
+<ul class="nav justify-content-center" style="border-bottom: 3px solid #00aa3e;">
+  <div class="col-sm">
+    <h1 class="homepage-logo" style="text-align:center">Persons <span style="color:#00aa3e">List</span></h1>
+  </div>
+</ul>
+<br>
+<form method="post" action="/edit">
+  <div class="col-xl-4 col-md-8 col-sm-10 col-xs-12 mx-auto">
+    <div class="show-div">
+      <div class="show-apartments-div">
+        <div class="input-group mb-3"><div class="input-group-prepend">
+          <span style="width: 140px;" class="input-group-text">Name</span>
+        </div><input type="text" class="form-control"  name="name" value="{{ user.name }}">
+        </div>
+        <div class="input-group mb-3"><div class="input-group-prepend">
+          <span style="width: 140px;" class="input-group-text">Email</span>
+        </div><input type="email" class="form-control"  name="email" value="{{ user.email }}">
+        </div>
+        <div class="input-group mb-3"><div class="input-group-prepend">
+          <span style="width: 140px;" class="input-group-text">Password</span>
+        </div><input type="text" class="form-control"  name="password" value="{{ user.password }}">
+        </div>
+        <div class="input-group mb-3"><div class="input-group-prepend">
+          <span style="width: 140px;" class="input-group-text">Age</span>
+        </div><input type="number" class="form-control"  name="age" value="{{ user.age }}">
+        </div>
+        <button type="submit"  class="btn btn-light btn-lg btn-block col-xl-8 col-md-8 col-sm-8 col-xs-8 float-left"
+                style="margin-left: 0px;background:#00aa3e;color:white">Edit</button>
+        <a class="btn btn-light btn-lg btn-block col-xl-4 col-md-4 col-sm-4 col-xs-4 float-right border"
+           style="margin: 0px -3px;" href="/">back</a>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>
